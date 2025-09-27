@@ -20,8 +20,8 @@ public class AccountService {
 
     public Account createAccount(BigDecimal initialBalance) {
         Account account = Account.builder()
-                .status("ACTIVE")
                 .balance(initialBalance)
+                .status("INACTIVE")
                 .build();
         return accountRepository.save(account);
     }

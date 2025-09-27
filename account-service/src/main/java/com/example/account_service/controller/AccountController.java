@@ -45,8 +45,8 @@ public class AccountController {
     @Operation(summary = "Update account balance")
     @PutMapping("/{id}")
     public ResponseEntity<Account> updateAccount(@PathVariable UUID id,
-                                                 @RequestParam BigDecimal newBalance) {
-        return ResponseEntity.ok(accountService.updateAccount(id, newBalance));
+                                                 @RequestParam BigDecimal balance) {
+        return ResponseEntity.ok(accountService.updateAccount(id, balance));
     }
 
     @Operation(summary = "Delete an account")

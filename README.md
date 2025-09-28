@@ -47,15 +47,15 @@ Once the services are running, Swagger UI is available at:
 The project uses **PostgreSQL**.  
 
 1. Install PostgreSQL and pgAdmin.  
-2. Import the database files:
-   I.accountdb
-   II.carddb
-   III.frauddb
-   IV.transactiondb
+2. Import the database files:   
+   -accountdb
+   -carddb
+   -frauddb
+   -transactiondb
    
 ## Project Setup 
 
-[git clone https://github.com/your-username/areeba-java-challenge.git](https://github.com/Merhii/Areeba-Java-Challenge.git)
+git clone https://github.com/Merhii/Areeba-Java-Challenge.git
 cd areeba-java-challenge
 mvn clean install
 

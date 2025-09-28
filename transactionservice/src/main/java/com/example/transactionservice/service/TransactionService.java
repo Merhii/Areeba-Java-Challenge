@@ -49,7 +49,6 @@ public class TransactionService {
             throw new RuntimeException("Account is not active");
         }
 
-        // Fraud detection step
         boolean fraudulent = fraudClient.checkFraud(cardId, amount);
         if (fraudulent) {
             Transaction rejectedTx = Transaction.builder()
@@ -65,7 +64,7 @@ public class TransactionService {
             return transactionRepository.save(rejectedTx);
         }
 
-        // Normal balance update
+
         BigDecimal newBalance = account.balance();
         if ("D".equals(type)) {
             if (account.balance().compareTo(amount) < 0) {

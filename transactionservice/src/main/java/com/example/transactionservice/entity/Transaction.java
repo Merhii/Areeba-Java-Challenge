@@ -29,7 +29,7 @@ public class Transaction {
     private Timestamp transactionDate;
 
     @Column(nullable = false)
-    private String transactionType; // "C" or "D"
+    private String transactionType;
 
     @Column(nullable = false)
     private UUID accountId;

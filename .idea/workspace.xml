@@ -5,26 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3917aaef-1b4e-4979-9b0c-2fc0de3f14fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/fraudservice/src/main/java/com/example/fraudservice/controller/FraudController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraudservice/src/main/java/com/example/fraudservice/entity/FraudCheck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraudservice/src/main/java/com/example/fraudservice/repository/FraudCheckRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraudservice/src/main/java/com/example/fraudservice/service/FraudCheckService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraudservice/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/example/transactionservice/client/FraudClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/example/transactionservice/client/FraudResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transactionservice/src/test/java/com/example/transactionservice/TransactionServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/card-service" beforeDir="false" afterPath="$PROJECT_DIR$/card-service" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/card-service/src/main/java/com/example/card_service/AreebaJavaChallengeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/card-service/src/main/java/com/example/card_service/CardServiceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/card-service/src/main/java/com/example/card_service/controller/CardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/card-service/src/main/java/com/example/card_service/controller/CardController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/card-service/src/main/java/com/example/card_service/entity/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/card-service/src/main/java/com/example/card_service/entity/Card.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/card-service/src/main/java/com/example/card_service/repository/CardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/card-service/src/main/java/com/example/card_service/repository/CardRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/card-service/src/main/java/com/example/card_service/service/CardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/card-service/src/main/java/com/example/card_service/service/CardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transactionservice/src/main/java/com/example/transactionservice/TransactionController/TransactionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/example/transactionservice/controller/TransactionController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transactionservice/src/main/java/com/example/transactionservice/entity/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/example/transactionservice/entity/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transactionservice/src/main/java/com/example/transactionservice/repository/TransactionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/example/transactionservice/repository/TransactionRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transactionservice/src/main/java/com/example/transactionservice/service/TransactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/example/transactionservice/service/TransactionService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

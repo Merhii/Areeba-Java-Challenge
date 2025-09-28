@@ -1,0 +1,71 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 17.4
+-- Dumped by pg_dump version 17.4
+
+-- Started on 2025-09-29 00:58:58 +04
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET transaction_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+SET default_tablespace = '';
+
+SET default_table_access_method = heap;
+
+--
+-- TOC entry 217 (class 1259 OID 16420)
+-- Name: transactions; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.transactions (
+    id uuid NOT NULL,
+    transaction_amount numeric(38,2) NOT NULL,
+    transaction_date timestamp without time zone NOT NULL,
+    transaction_type character varying(255) NOT NULL,
+    account_id uuid NOT NULL,
+    card_id uuid NOT NULL,
+    response character varying(255) DEFAULT 'APPROVED'::character varying NOT NULL
+);
+
+
+ALTER TABLE public.transactions OWNER TO postgres;
+
+--
+-- TOC entry 3597 (class 0 OID 16420)
+-- Dependencies: 217
+-- Data for Name: transactions; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.transactions (id, transaction_amount, transaction_date, transaction_type, account_id, card_id, response) FROM stdin;
+6b584e1e-7e7b-44cc-b942-670ca8af54ee	23.00	2025-09-27 23:25:20.308219	C	4e95ddee-f12f-4fa8-ab21-0d522aafe0f5	433c2f50-619b-4395-8c93-f407ed3b1a2d	APPROVED
+3f6624a3-ad4b-48fa-a0af-790b3fa2a1bb	12.00	2025-09-28 18:47:48.063572	D	4e95ddee-f12f-4fa8-ab21-0d522aafe0f5	433c2f50-619b-4395-8c93-f407ed3b1a2d	APPROVED
+7c41efbe-537a-477b-9dd0-ed66dba2ec8e	100000.00	2025-09-28 18:47:54.150637	D	4e95ddee-f12f-4fa8-ab21-0d522aafe0f5	433c2f50-619b-4395-8c93-f407ed3b1a2d	REJECTED:
+\.
+
+
+--
+-- TOC entry 3451 (class 2606 OID 16424)
+-- Name: transactions transactions_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.transactions
+    ADD CONSTRAINT transactions_pkey PRIMARY KEY (id);
+
+
+-- Completed on 2025-09-29 00:58:58 +04
+
+--
+-- PostgreSQL database dump complete
+--
+

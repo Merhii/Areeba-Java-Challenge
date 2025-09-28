@@ -5,26 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3917aaef-1b4e-4979-9b0c-2fc0de3f14fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/example/transactionservice/TransactionController/TransactionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/example/transactionservice/client/AccountClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/example/transactionservice/client/CardClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/example/transactionservice/entity/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/example/transactionservice/repository/TransactionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/example/transactionservice/service/TransactionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactionservice/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fraudservice/src/main/java/com/example/fraudservice/controller/FraudController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fraudservice/src/main/java/com/example/fraudservice/entity/FraudCheck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fraudservice/src/main/java/com/example/fraudservice/repository/FraudCheckRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fraudservice/src/main/java/com/example/fraudservice/service/FraudCheckService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fraudservice/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/example/transactionservice/client/FraudClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/example/transactionservice/client/FraudResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/example/account_service/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/example/account_service/controller/AccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/example/account_service/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/example/account_service/service/AccountService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/card-service" beforeDir="false" afterPath="$PROJECT_DIR$/card-service" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/card-service/src/main/java/com/example/card_service/AreebaJavaChallengeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/card-service/src/main/java/com/example/card_service/CardServiceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/card-service/src/main/java/com/example/card_service/controller/CardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/card-service/src/main/java/com/example/card_service/controller/CardController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/card-service/src/main/java/com/example/card_service/entity/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/card-service/src/main/java/com/example/card_service/entity/Card.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/card-service/src/main/java/com/example/card_service/repository/CardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/card-service/src/main/java/com/example/card_service/repository/CardRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/card-service/src/main/java/com/example/card_service/service/CardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/card-service/src/main/java/com/example/card_service/service/CardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transactionservice/src/main/java/com/example/transactionservice/TransactionController/TransactionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/example/transactionservice/controller/TransactionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transactionservice/src/main/java/com/example/transactionservice/entity/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/example/transactionservice/entity/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transactionservice/src/main/java/com/example/transactionservice/repository/TransactionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/example/transactionservice/repository/TransactionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transactionservice/src/main/java/com/example/transactionservice/service/TransactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/transactionservice/src/main/java/com/example/transactionservice/service/TransactionService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,14 +56,24 @@
     "Application.AccountServiceApplication.executor": "Run",
     "Application.AreebaJavaChallengeApplication.executor": "Run",
     "Application.CardServiceApplication.executor": "Run",
+    "Application.FraudserviceApplication.executor": "Run",
     "Application.TransactionServiceApplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/karimmerhi/Developer/Areeba-Java-Challenge"
+    "last_opened_file_path": "/Users/karimmerhi/Developer/Areeba-Java-Challenge/fraudservice/src/main/resources",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.transactionservice.client" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/fraudservice/src/main/resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/transactionservice/src/main/resources" />
       <recent name="$PROJECT_DIR$" />
@@ -97,6 +108,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FraudserviceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.fraudservice.FraudserviceApplication" />
+      <module name="fraudservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.fraudservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TransactionServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.transactionservice.TransactionServiceApplication" />
       <module name="transactionservice" />
@@ -113,8 +137,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.TransactionServiceApplication" />
-        <item itemvalue="Application.AccountServiceApplication" />
+        <item itemvalue="Application.FraudserviceApplication" />
         <item itemvalue="Application.CardServiceApplication" />
+        <item itemvalue="Application.AccountServiceApplication" />
       </list>
     </recent_temporary>
   </component>

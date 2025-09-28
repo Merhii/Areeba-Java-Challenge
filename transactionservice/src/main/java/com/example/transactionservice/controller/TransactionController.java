@@ -1,4 +1,4 @@
-package com.example.transactionservice.TransactionController;
+package com.example.transactionservice.controller;
 
 import com.example.transactionservice.entity.Transaction;
 import com.example.transactionservice.service.TransactionService;
@@ -31,4 +31,5 @@ public class TransactionController {
             @RequestParam String type) {
         return transactionService.createTransaction(accountId, cardId, amount, type);
     }
+
 }

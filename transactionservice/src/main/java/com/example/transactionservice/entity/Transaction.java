@@ -19,7 +19,6 @@ public class Transaction {
 
     @Id
     @UuidGenerator
-    @GeneratedValue
     @Column(name = "id", updatable = false, nullable = false)
     private UUID id;
 
@@ -37,4 +36,6 @@ public class Transaction {
 
     @Column(nullable = false)
     private UUID cardId;
+    @Column(nullable = false)
+    private String response = "APPROVED";
 }
